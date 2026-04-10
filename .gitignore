@@ -1,0 +1,12 @@
+# Folder
+html/node_modules
+html/src/assets/css/app-input.css
+html/package-lock.json
+html/package.json
+
+.json*
+
+.DS_Store
+.env*
+.local*
+.log*
