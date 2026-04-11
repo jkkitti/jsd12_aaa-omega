@@ -11,8 +11,8 @@
     <!--<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>-->
     <link rel="stylesheet" href="./src/assets/css/app.css" />
   </head>
-  <body>
-    <header class="text-2xl text-center p-5">Components Present</header>
+  <body id="components">
+    <header class="text-2xl text-center text-neutral-hover p-5">Components Present</header>
     <main>
       <section id="color" class="component-list">
         <h3>Color for <code>text-</code> <code>border-</code> <code>bg-</code></h3>
@@ -71,78 +71,55 @@
           <li class="bg-neutral-dark"    title="--color-neutral-dark"></li>
           <li class="bg-neutral-darker"  title="--color-neutral-darker"></li>
           
-          <li class="bg-gray-lighter" title="--color-gray-lighter"></li>
-          <li class="bg-gray-light"   title="--color-gray-light"></li>
-          <li class="bg-gray-disable" title="--color-gray-disable"></li>
-          <li class="bg-gray-soft"    title="--color-gray-soft"></li>
-          <li class="bg-gray-base"    title="--color-gray-base"></li>
-          <li class="bg-gray-hover"   title="--color-gray-hover"></li>
-          <li class="bg-gray-dark"    title="--color-gray-dark"></li>
-          <li class="bg-gray-darker"  title="--color-gray-darker"></li>
+          <li class="bg-centent-lighter" title="--color-centent-lighter"></li>
+          <li class="bg-centent-light"   title="--color-centent-light"></li>
+          <li class="bg-centent-disable" title="--color-centent-disable"></li>
+          <li class="bg-centent-soft"    title="--color-centent-soft"></li>
+          <li class="bg-centent-base"    title="--color-centent-base"></li>
+          <li class="bg-centent-hover"   title="--color-centent-hover"></li>
+          <li class="bg-centent-dark"    title="--color-centent-dark"></li>
+          <li class="bg-centent-darker"  title="--color-centent-darker"></li>
         </ul>
       </section>
       <section id="button" class="component-list">
-        <h3>Button for <code>.button .button-</code></h3>
+        <h3>Button for <code>button button-</code></h3>
         <ul>
-          <li><a class="bg-primary-lighter" title="--color-primary-lighter" href="#button">button</a></li>
-          <li><a class="bg-primary-light"   title="--color-primary-light" href="#button">button</a></li>
-          <li><a class="bg-primary-disable" title="--color-primary-disable" href="#button">button</a></li>
-          <li><a class="bg-primary-soft"    title="--color-primary-soft" href="#button">button</a></li>
-          <li><a class="bg-primary-base"    title="--color-primary-base" href="#button">button</a></li>
-          <li><a class="bg-primary-hover"   title="--color-primary-hover" href="#button">button</a></li>
-          <li><a class="bg-primary-dark"    title="--color-primary-dark" href="#button">button</a></li>
-          <li><a class="bg-primary-darker"  title="--color-primary-darker" href="#button">button</a></li>
-          <li><a class="bg-accent-lighter" title="--color-accent-lighter" href="#button">button</a></li>
-          <li><a class="bg-accent-light"   title="--color-accent-light" href="#button">button</a></li>
-          <li><a class="bg-accent-disable" title="--color-accent-disable" href="#button">button</a></li>
-          <li><a class="bg-accent-soft"    title="--color-accent-soft" href="#button">button</a></li>
-          <li><a class="bg-accent-base"    title="--color-accent-base" href="#button">button</a></li>
-          <li><a class="bg-accent-hover"   title="--color-accent-hover" href="#button">button</a></li>
-          <li><a class="bg-accent-dark"    title="--color-accent-dark" href="#button">button</a></li>
-          <li><a class="bg-accent-darker"  title="--color-accent-darker" href="#button">button</a></li>
-          <li><a class="bg-error-lighter" title="--color-error-lighter" href="#button">button</a></li>
-          <li><a class="bg-error-light"   title="--color-error-light" href="#button">button</a></li>
-          <li><a class="bg-error-disable" title="--color-error-disable" href="#button">button</a></li>
-          <li><a class="bg-error-soft"    title="--color-error-soft" href="#button">button</a></li>
-          <li><a class="bg-error-base"    title="--color-error-base" href="#button">button</a></li>
-          <li><a class="bg-error-hover"   title="--color-error-hover" href="#button">button</a></li>
-          <li><a class="bg-error-dark"    title="--color-error-dark" href="#button">button</a></li>
-          <li><a class="bg-error-darker"  title="--color-error-darker" href="#button">button</a></li>
-          <li><a class="bg-warning-lighter" title="--color-warning-lighter" href="#button">button</a></li>
-          <li><a class="bg-warning-light"   title="--color-warning-light" href="#button">button</a></li>
-          <li><a class="bg-warning-disable" title="--color-warning-disable" href="#button">button</a></li>
-          <li><a class="bg-warning-soft"    title="--color-warning-soft" href="#button">button</a></li>
-          <li><a class="bg-warning-base"    title="--color-warning-base" href="#button">button</a></li>
-          <li><a class="bg-warning-hover"   title="--color-warning-hover" href="#button">button</a></li>
-          <li><a class="bg-warning-dark"    title="--color-warning-dark" href="#button">button</a></li>
-          <li><a class="bg-warning-darker"  title="--color-warning-darker" href="#button">button</a></li>
-          <li><a class="bg-success-lighter" title="--color-success-lighter" href="#button">button</a></li>
-          <li><a class="bg-success-light"   title="--color-success-light" href="#button">button</a></li>
-          <li><a class="bg-success-disable" title="--color-success-disable" href="#button">button</a></li>
-          <li><a class="bg-success-soft"    title="--color-success-soft" href="#button">button</a></li>
-          <li><a class="bg-success-base"    title="--color-success-base" href="#button">button</a></li>
-          <li><a class="bg-success-hover"   title="--color-success-hover" href="#button">button</a></li>
-          <li><a class="bg-success-dark"    title="--color-success-dark" href="#button">button</a></li>
-          <li><a class="bg-success-darker"  title="--color-success-darker" href="#button">button</a></li>
-          <li><a class="bg-neutral-lighter" title="--color-neutral-lighter" href="#button">button</a></li>
-          <li><a class="bg-neutral-light"   title="--color-neutral-light" href="#button">button</a></li>
-          <li><a class="bg-neutral-disable" title="--color-neutral-disable" href="#button">button</a></li>
-          <li><a class="bg-neutral-soft"    title="--color-neutral-soft" href="#button">button</a></li>
-          <li><a class="bg-neutral-base"    title="--color-neutral-base" href="#button">button</a></li>
-          <li><a class="bg-neutral-hover"   title="--color-neutral-hover" href="#button">button</a></li>
-          <li><a class="bg-neutral-dark"    title="--color-neutral-dark" href="#button">button</a></li>
-          <li><a class="bg-neutral-darker"  title="--color-neutral-darker" href="#button">button</a></li>
-          <li><a class="bg-gray-lighter" title="--color-gray-lighter" href="#button">button</a></li>
-          <li><a class="bg-gray-light"   title="--color-gray-light" href="#button">button</a></li>
-          <li><a class="bg-gray-disable" title="--color-gray-disable" href="#button">button</a></li>
-          <li><a class="bg-gray-soft"    title="--color-gray-soft" href="#button">button</a></li>
-          <li><a class="bg-gray-base"    title="--color-gray-base" href="#button">button</a></li>
-          <li><a class="bg-gray-hover"   title="--color-gray-hover" href="#button">button</a></li>
-          <li><a class="bg-gray-dark"    title="--color-gray-dark" href="#button">button</a></li>
-          <li><a class="bg-gray-darker"  title="--color-gray-darker" href="#button">button</a></li>
+          <li><a class="button"                title="button"                href="#button">button</a></li>
+          <li><a class="button button-primary" title="button button-primary" href="#button">button button-primary</a></li>
+          <li><a class="button button-accent"  title="button button-accent"  href="#button">button button-accent</a></li>
+          <li><a class="button button-error"   title="button button-error"   href="#button">button button-error</a></li>
+          <li><a class="button button-warning" title="button button-warning" href="#button">button button-warning</a></li>
+          <li><a class="button button-success" title="button button-success" href="#button">button button-success</a></li>
+          <li><a class="button button-neutral" title="button button-neutral" href="#button">button button-neutral</a></li>
+          <li><a class="button button-content" title="button button-content" href="#button">button button-content</a></li>
+          <li><a class="button-disable"                title="button-disable"                href="#button-disable">button-disable</a></li>
+          <li><a class="button-disable button-primary" title="button-disable button-primary" href="#button-disable">button-disable button-primary</a></li>
+          <li><a class="button-disable button-accent"  title="button-disable button-accent"  href="#button-disable">button-disable button-accent</a></li>
+          <li><a class="button-disable button-error"   title="button-disable button-error"   href="#button-disable">button-disable button-error</a></li>
+          <li><a class="button-disable button-warning" title="button-disable button-warning" href="#button-disable">button-disable button-warning</a></li>
+          <li><a class="button-disable button-success" title="button-disable button-success" href="#button-disable">button-disable button-success</a></li>
+          <li><a class="button-disable button-neutral" title="button-disable button-neutral" href="#button-disable">button-disable button-neutral</a></li>
+          <li><a class="button-disable button-content" title="button-disable button-content" href="#button-disable">button-disable button-content</a></li>
+          
+          <li><a class="button-outline"                title="button-outline"                href="#button-outline">button-outline</a></li>
+          <li><a class="button-outline button-primary" title="button-outline button-primary" href="#button-outline">button-outline button-primary</a></li>
+          <li><a class="button-outline button-accent"  title="button-outline button-accent"  href="#button-outline">button-outline button-accent</a></li>
+          <li><a class="button-outline button-error"   title="button-outline button-error"   href="#button-outline">button-outline button-error</a></li>
+          <li><a class="button-outline button-warning" title="button-outline button-warning" href="#button-outline">button-outline button-warning</a></li>
+          <li><a class="button-outline button-success" title="button-outline button-success" href="#button-outline">button-outline button-success</a></li>
+          <li><a class="button-outline button-neutral" title="button-outline button-neutral" href="#button-outline">button-outline button-neutral</a></li>
+          <li><a class="button-outline button-content" title="button-outline button-content" href="#button-outline">button-outline button-content</a></li>
+          <li><a class="button-outline-disable"                title="button-outline-disable"                href="#button-outline-disable">button-outline-disable</a></li>
+          <li><a class="button-outline-disable button-primary" title="button-outline-disable button-primary" href="#button-outline-disable">button-outline-disable button-primary</a></li>
+          <li><a class="button-outline-disable button-accent"  title="button-outline-disable button-accent"  href="#button-outline-disable">button-outline-disable button-accent</a></li>
+          <li><a class="button-outline-disable button-error"   title="button-outline-disable button-error"   href="#button-outline-disable">button-outline-disable button-error</a></li>
+          <li><a class="button-outline-disable button-warning" title="button-outline-disable button-warning" href="#button-outline-disable">button-outline-disable button-warning</a></li>
+          <li><a class="button-outline-disable button-success" title="button-outline-disable button-success" href="#button-outline-disable">button-outline-disable button-success</a></li>
+          <li><a class="button-outline-disable button-neutral" title="button-outline-disable button-neutral" href="#button-outline-disable">button-outline-disable button-neutral</a></li>
+          <li><a class="button-outline-disable button-content" title="button-outline-disable button-content" href="#button-outline-disable">button-outline-disable button-content</a></li>
         </ul>
       </section>
     </main>
-    <footer>footer</footer>
+    <footer class="text-center py-5 border-t border-neutral-disable"><em class="inline-block text-white px-3 pt-0.5 pb-1 rounded-full bg-neutral-base">happy coding :)</em></footer>
   </body>
 </html>
