@@ -12,6 +12,7 @@
     --spacing: 0.25rem;
     --text-2xl: 1.5rem;
     --text-2xl--line-height: calc(2 / 1.5);
+    --font-weight-normal: 400;
     --radius-sm: 0.25rem;
     --radius-lg: 0.5rem;
     --default-font-family: var(--font-sans);
@@ -67,7 +68,6 @@
     --color-neutral-dark: #1d293d;
     --color-neutral-darker: #0f172b;
     --color-content-lighter: #f9fafb;
-    --color-content-light: #f3f4f6;
     --color-content-disable: #e5e7eb;
     --color-content-base: #99a1af;
     --color-content-hover: #6a7282;
@@ -227,6 +227,9 @@
   }
   .inline-block {
     display: inline-block;
+  }
+  .table {
+    display: table;
   }
   .h-full {
     height: 100%;
@@ -431,6 +434,13 @@
   .text-white {
     color: var(--color-white);
   }
+  .hover\:bg-white\! {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-white) !important;
+      }
+    }
+  }
   .md\:w-32 {
     @media (width >= 48rem) {
       width: calc(var(--spacing) * 32);
@@ -459,10 +469,46 @@
   }
   body {
     font-family: var(--font-kanit);
+    color: var(--color-content-base);
   }
   img {
     border-radius: var(--radius-lg);
     background-color: var(--color-neutral-light);
+  }
+  table tr {
+    border-bottom-style: var(--tw-border-style);
+    border-bottom-width: 1px;
+    border-color: var(--color-neutral-light);
+  }
+  table thead tr {
+    border-color: var(--color-neutral-disable);
+  }
+  table tbody tr {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-neutral-lighter);
+      }
+    }
+  }
+  table :is(th, td) {
+    padding-inline: calc(var(--spacing) * 5);
+    padding-block: calc(var(--spacing) * 3);
+  }
+  table :is(th, td):first-child {
+    padding-left: calc(var(--spacing) * 0);
+  }
+  table :is(th, td):last-child {
+    padding-right: calc(var(--spacing) * 0);
+  }
+  table th {
+    text-align: left;
+    vertical-align: bottom;
+    --tw-font-weight: var(--font-weight-normal);
+    font-weight: var(--font-weight-normal);
+    color: var(--color-content-hover);
+  }
+  table td {
+    vertical-align: top;
   }
 }
 @layer components {
@@ -624,7 +670,7 @@
     }
   }
   .button-outline-disable , .button-outline-disable.button-primary {
-    border-color: var(--color-primary-disable);
+    border-color: var(--color-primary-light);
     color: var(--color-primary-light);
   }
   .button-outline-disable.button-accent {
@@ -632,24 +678,24 @@
     color: var(--color-accent-light);
   }
   .button-outline-disable.button-error {
-    border-color: var(--color-error-disable);
+    border-color: var(--color-error-light);
     color: var(--color-error-light);
   }
   .button-outline-disable.button-warning {
-    border-color: var(--color-warning-disable);
+    border-color: var(--color-warning-light);
     color: var(--color-warning-light);
   }
   .button-outline-disable.button-success {
-    border-color: var(--color-success-disable);
+    border-color: var(--color-success-light);
     color: var(--color-success-light);
   }
   .button-outline-disable.button-neutral {
     border-color: var(--color-neutral-disable);
-    color: var(--color-neutral-light);
+    color: var(--color-neutral-disable);
   }
   .button-outline-disable.button-content {
     border-color: var(--color-content-disable);
-    color: var(--color-content-light);
+    color: var(--color-content-disable);
   }
 }
 .material-symbols-outlined {
@@ -689,6 +735,10 @@
   inherits: false;
   initial-value: solid;
 }
+@property --tw-font-weight {
+  syntax: "*";
+  inherits: false;
+}
 @property --tw-leading {
   syntax: "*";
   inherits: false;
@@ -697,6 +747,7 @@
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
       --tw-border-style: solid;
+      --tw-font-weight: initial;
       --tw-leading: initial;
     }
   }
